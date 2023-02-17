@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "./Footer.css";
+import { ReactComponent as FBImage } from "../images/facebook.svg";
+import { ReactComponent as IGImage } from "../images/instagram.svg";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -59,15 +61,16 @@ const Footer = () => {
           rel="noreferrer"
           href="https://www.facebook.com/"
         >
-          Facebook
+          <FBImage />
         </a>
+
         <a
           className="f-link"
           target="_blank"
           rel="noreferrer"
           href="https://www.instagram.com/"
         >
-          Instagram
+          <IGImage />
         </a>
         <a className="f-link" href="/">
           Join us!
