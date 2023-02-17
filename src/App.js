@@ -12,73 +12,67 @@ import MuiContextProvider from "./context/MuiContextProvider";
 
 function App() {
   return (
-    <>
-      {/* <Header />
-      <Nav />
-      <Main />
-      <Footer /> */}
-      <MuiContextProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<HomePage />}></Route>
+    <MuiContextProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
 
-            <Route
-              path="/about"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <About />
-                </React.Suspense>
-              }
-            ></Route>
+          <Route
+            path="/about"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <About />
+              </React.Suspense>
+            }
+          ></Route>
 
-            <Route
-              path="/booking"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <BookingPage />
-                </React.Suspense>
-              }
-            ></Route>
+          <Route
+            path="/booking"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <BookingPage />
+              </React.Suspense>
+            }
+          ></Route>
 
-            <Route
-              path="/confirming"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <ConfirmedBooking />
-                </React.Suspense>
-              }
-            ></Route>
+          <Route
+            path="/confirming"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <ConfirmedBooking />
+              </React.Suspense>
+            }
+          ></Route>
 
-            <Route
-              path="/login"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <Login />
-                </React.Suspense>
-              }
-            ></Route>
+          <Route
+            path="/login"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Login />
+              </React.Suspense>
+            }
+          ></Route>
 
-            <Route
-              path="/register"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <Register />
-                </React.Suspense>
-              }
-            ></Route>
+          <Route
+            path="/register"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <Register />
+              </React.Suspense>
+            }
+          ></Route>
 
-            <Route
-              path="/order"
-              element={
-                <React.Suspense fallback={<>...</>}>
-                  <OrderPage />
-                </React.Suspense>
-              }
-            ></Route>
-          </Routes>
-        </Router>
-      </MuiContextProvider>
-    </>
+          <Route
+            path="/order"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <OrderPage />
+              </React.Suspense>
+            }
+          ></Route>
+        </Routes>
+      </Router>
+    </MuiContextProvider>
   );
 }
 
