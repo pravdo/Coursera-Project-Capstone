@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 40px;
+  background-color: #495e57;
+}
+
+.f-img {
+  width: 100px;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.f-link {
+  color: #fff;
+}
+.f-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

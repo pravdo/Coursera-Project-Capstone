@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+  }
+  .navbar > li{
+    flex: 2;
+   /* text-align: center; */
+   height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar > li:first-child{
+  padding: 0 15px;
+  }
+
+  .navbar > li:hover:not(:first-child){
+    background-color:#f4ce14 ;
+    transition: .25s;
+    cursor: pointer;
+    
+  }
