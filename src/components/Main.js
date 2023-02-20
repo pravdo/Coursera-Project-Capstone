@@ -1,16 +1,15 @@
-// import React, { useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Main.css";
 import uuid from "react-uuid";
-// import { UseMuiContext } from "../context/MuiContextProvider";
-// import MuiCarousel from "./components/MUIcomp/MuiCarousel";
-// import { CircularProgress } from "@mui/material";
-// import { useNavigate } from "react-router";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import { UseMuiContext } from "../context/MuiContextProvider";
+import { CircularProgress } from "@mui/material";
+import { useNavigate } from "react-router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Main = () => {
-  // const { loading, setLoading, handleClick, order } = UseMuiContext();
-  // const navigate = useNavigate();
+  const { loading, setLoading, handleClick, order } = UseMuiContext();
+  const navigate = useNavigate();
   const cardArr = [
     {
       title: "Greek ",
@@ -63,47 +62,40 @@ const Main = () => {
       description:
         "This restaurant served as a perfect dinner for me after a long night of studying. I would definitely order from here again!",
     },
-    {
-      userName: "Casey Lau",
-      description: "This is the best Mediterranean food that I've ever had!",
-    },
-    {
-      userName: "Alan Chen",
-      description:
-        "I've had some great Mediterranean food before, but none of them beats Little Lemon in flavor and texture.",
-    },
   ];
 
-  // function handleClickAndTiming(item) {
-  //   // handleClick(item);
+  function handleClickAndTiming(item) {
+    handleClick(item);
 
-  //   setTimeout(() => {
-  //     // setLoading({});
-  //     navigate("/order");
-  //   }, 1000);
-  // }
+    setTimeout(() => {
+      setLoading({});
+      navigate("/order");
+    }, 1000);
+  }
 
-  // useEffect(() => {
-  //   localStorage.setItem("order", JSON.stringify(order));
-  // }, [order]);
+  useEffect(() => {
+    localStorage.setItem("order", JSON.stringify(order));
+  }, [order]);
 
-  // useEffect(() => {
-  //   AOS.init();
-  //   AOS.refresh();
-  // }, []);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="main ">
-      <h1 className="title">This weeks specials</h1>
-      <button className="primaryButton menuBtn">
-        <a href="/icons_assets/menu.webp" className="link " target="_blank">
-          <h2>Online Menu</h2>
-        </a>
-      </button>
+      <div className="specials">
+        <h1 className="title">This weeks specials</h1>
+        <br />
+        <button className="primaryButton menuBtn">
+          <a href="/icons_assets/menu.webp" className="link " target="_blank">
+            <h2>Online Menu</h2>
+          </a>
+        </button>
+      </div>
+
       <div className="card-group  ">
-        <div className="smallCards CarouselCards">
-          {/* <MuiCarousel itemArr={cardArr} /> */}
-        </div>
+        <div className="smallCards CarouselCards"></div>
         <div className="bigCards card-group">
           {cardArr.map((card, index) => {
             return (
@@ -117,7 +109,7 @@ const Main = () => {
                 <h2 className="sub-title">{card.title}</h2>
                 <h3 className="sub-title">${card.price}</h3>
                 <p className="plain-text">{card.description}</p>
-                {/* <button
+                <button
                   onClick={() => handleClickAndTiming(card)}
                   className="primaryButton menuBtn"
                 >
@@ -126,7 +118,7 @@ const Main = () => {
                   ) : (
                     <p>Order for Delivery</p>
                   )}
-                </button> */}
+                </button>
               </div>
             );
           })}
@@ -136,9 +128,7 @@ const Main = () => {
       <div className="main2">
         <h1 className="title">Testimonials</h1>
         <div className=" card-group">
-          <div className="smallCards CarouselCards">
-            {/* <MuiCarousel itemArr={cards2} /> */}
-          </div>
+          <div className="smallCards CarouselCards"></div>
           <div className="bigCards main2Cards  ">
             {cards2.map((card, index) => {
               return (

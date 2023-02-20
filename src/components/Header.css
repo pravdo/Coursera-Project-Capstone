@@ -34,6 +34,7 @@
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
+  margin-left: 2em;
 }
 
 .main-img {

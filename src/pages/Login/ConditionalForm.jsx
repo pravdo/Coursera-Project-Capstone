@@ -38,7 +38,7 @@ const ConditionalForm = ({ isRegister, formikValues, setValues }) => {
         }
         setOpen(true);
       } else {
-        //This is for Login
+        //Login form
         let count = 0;
         const getLocalData = JSON.parse(localStorage.getItem("registerArr"));
         if (getLocalData !== null)
@@ -63,7 +63,7 @@ const ConditionalForm = ({ isRegister, formikValues, setValues }) => {
         }
         setOpen(true);
       }
-      // formik.resetForm();
+      formik.resetForm();
     },
     validationSchema: Yup.object().shape({
       firstName: Yup.string().when("isRegister", {

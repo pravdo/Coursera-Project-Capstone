@@ -12,7 +12,6 @@ const FullScreenMain = () => {
           </div>
           <div className="sub-content">
             <p className="plain-text black">
-              {" "}
               We are a family owned Little Lemon opened in 1995 by two Italian
               brothers, Adrian and Mario. Despite the city's diversity, the two
               brothers recognized the lack of Mediterranean cuisine in Chicago,
@@ -32,7 +31,7 @@ const FullScreenMain = () => {
           />
           <img
             alt="img"
-            className="main3Img resImg imgOn "
+            className="main3Img resImg imgOver "
             loading="lazy"
             src="/icons_assets/on.jpeg"
           />

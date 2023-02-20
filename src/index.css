@@ -63,16 +63,8 @@ nav {
   background-color: #ffffff;
   box-shadow: 2px 4px 10px 0px rgb(161, 161, 161);
   z-index: 100;
-  /* -webkit-box-shadow: 2px 15px 18px 0px rgba(155,155,155,0.76);
-  -moz-box-shadow: 2px 15px 18px 0px rgba(155,155,155,0.76); */
 }
-/* .navbar{
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; 
-  right: 0;
-  left: 0;
-} */
+
 .MuiFormHelperText-root {
   color: red !important;
 }
@@ -93,7 +85,6 @@ nav {
   width: 100%;
   object-fit: cover;
   height: 50vh;
-  /* background-image: url('/icons_assets/restaurant.jpg'); */
 }
 .abouth1 {
   position: absolute;
@@ -108,9 +99,6 @@ nav {
 @media screen and (min-width: 620px) {
   .navbar > li:last-child {
     display: none;
-  }
-  .loginPage {
-    /* background-image: url(""); */
   }
 
   .inputParent > * {
@@ -163,7 +151,7 @@ label {
 .loginImg {
   position: absolute;
   width: 50vw;
-  height: 109vh;
+  height: 107vh;
   right: 0;
   top: 0;
 }

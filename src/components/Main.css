@@ -11,7 +11,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border-radius: 15px; */
+}
+
+.specials {
+  /* display: flex;
+  justify-content: center; */
+  margin: auto;
+  width: 25%;
 }
 
 .card-group {
@@ -47,16 +53,13 @@
   height: 420px;
 }
 
-.main3 > .content2 {
-  /* width: 50% ; */
-}
 .imgWrapper {
   position: relative;
   display: flex;
   align-items: center;
   padding-right: 80px;
 }
-.imgOn {
+.imgOver {
   position: absolute;
   left: 90px;
   bottom: 110px;
